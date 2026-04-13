@@ -1,0 +1,133 @@
+Windows PowerShell
+Copyright (C) Microsoft Corporation. All rights reserved.
+
+Install the latest PowerShell for new features and improvements! https://aka.ms/PSWindows
+
+PS D:\Semester 6\Computer Vision\Project\backend> python .\batch_stress_test.py
+Loading YOLOv8 AI Model... (May take a moment on first launch)
+AI Model Ready!
+================================================================================
+🚀 ENTERPRISE PIPELINE: DATASET GENERALIZATION STRESS TEST
+================================================================================
+Loading YOLOv8 Model...
+
+------------------------------------------------------------
+📹 ANALYZING: Daytime Traffic (Ideal Conditions)
+   File: day_traffic.mp4
+------------------------------------------------------------
+  -> Processed 20/60 frames...
+  -> Processed 40/60 frames...
+  -> Processed 60/60 frames...
+
+📊 INDIVIDUAL BENCHMARK:
+  Bandwidth Saved:  65.1%
+  False Positives:  -6.5 per frame
+  Textures Deleted: 1525 edges per frame
+  Execution Speed:  78.3% faster
+
+------------------------------------------------------------
+📹 ANALYZING: Evening Traffic (Low Light)
+   File: evening_traffic.mp4
+------------------------------------------------------------
+  -> Processed 20/60 frames...
+  -> Processed 40/60 frames...
+  -> Processed 60/60 frames...
+
+📊 INDIVIDUAL BENCHMARK:
+  Bandwidth Saved:  -16.2%
+  False Positives:  -6.4 per frame
+  Textures Deleted: 171 edges per frame
+  Execution Speed:  22.1% faster
+
+------------------------------------------------------------
+📹 ANALYZING: PTZ / Panning Camera (Dynamic Background)
+   File: moving_camera_traffic.mp4
+------------------------------------------------------------
+  -> Processed 20/60 frames...
+  -> Processed 40/60 frames...
+  -> Processed 60/60 frames...
+
+📊 INDIVIDUAL BENCHMARK:
+  Bandwidth Saved:  3.7%
+  False Positives:  -0.0 per frame
+  Textures Deleted: 385 edges per frame
+  Execution Speed:  47.6% faster
+
+------------------------------------------------------------
+📹 ANALYZING: Nighttime Traffic (Dark)
+   File: night_traffic.mp4
+------------------------------------------------------------
+  -> Processed 20/60 frames...
+  -> Processed 40/60 frames...
+  -> Processed 60/60 frames...
+
+📊 INDIVIDUAL BENCHMARK:
+  Bandwidth Saved:  -53.6%
+  False Positives:  -0.0 per frame
+  Textures Deleted: 33 edges per frame
+  Execution Speed:  0.0% faster
+
+------------------------------------------------------------
+📹 ANALYZING: Nighttime Pedestrians (Complex Lighting)
+   File: People1.mp4
+------------------------------------------------------------
+  -> Processed 20/60 frames...
+  -> Processed 40/60 frames...
+  -> Processed 60/60 frames...
+
+📊 INDIVIDUAL BENCHMARK:
+  Bandwidth Saved:  48.4%
+  False Positives:  -5.4 per frame
+  Textures Deleted: 485 edges per frame
+  Execution Speed:  68.2% faster
+
+------------------------------------------------------------
+📹 ANALYZING: Pitch Black Environment
+   File: People2.mp4
+------------------------------------------------------------
+  -> Processed 20/60 frames...
+  -> Processed 40/60 frames...
+  -> Processed 60/60 frames...
+
+📊 INDIVIDUAL BENCHMARK:
+  Bandwidth Saved:  39.3%
+  False Positives:  -1.2 per frame
+  Textures Deleted: 19 edges per frame
+  Execution Speed:  65.2% faster
+
+------------------------------------------------------------
+📹 ANALYZING: Adverse Weather (Rain/Snow Noise)
+   File: rainy_traffic.mp4
+------------------------------------------------------------
+  -> Processed 20/60 frames...
+  -> Processed 40/60 frames...
+  -> Processed 60/60 frames...
+
+📊 INDIVIDUAL BENCHMARK:
+  Bandwidth Saved:  26.7%
+  False Positives:  -2.5 per frame
+  Textures Deleted: 636 edges per frame
+  Execution Speed:  50.2% faster
+
+
+================================================================================
+🏆 FINAL EXECUTIVE SUMMARY: SYSTEM STRENGTHS & WEAKNESSES 🏆
+================================================================================
+
+🟢 SYSTEM STRENGTHS (Optimal Performance):
+These environments allow MOG2 to perfectly isolate foreground subjects, resulting in massive AWS savings.
+  ✅ Daytime Traffic (Ideal Conditions) (65.1% Bandwidth Savings)
+  ✅ Nighttime Pedestrians (Complex Lighting) (48.4% Bandwidth Savings)
+
+🟡 MODERATE PERFORMANCE:
+System remains functional, but background suppression is limited by complex lighting or lack of contrast.
+  ⚠️ PTZ / Panning Camera (Dynamic Background) (3.7% Bandwidth Savings)
+  ⚠️ Pitch Black Environment (39.3% Bandwidth Savings)
+  ⚠️ Adverse Weather (Rain/Snow Noise) (26.7% Bandwidth Savings)
+
+🔴 SYSTEM WEAKNESSES (Architectural Limits):
+These environments break the MOG2 background subtractor. Global visual noise or camera movement is interpreted as foreground.
+  ❌ Evening Traffic (Low Light) (-16.2% Bandwidth Savings)
+  ❌ Nighttime Traffic (Dark) (-53.6% Bandwidth Savings)
+
+================================================================================
